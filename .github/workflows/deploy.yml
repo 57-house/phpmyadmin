@@ -15,7 +15,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ secrets.ASIA_PMA_FTP_SERVER }} 
-        username: ${{ secrets.ASIA_PMA_FTP_USER }}
+        username: ${{ secrets.ASIA_PMA_FTP_USER }} 
         password: ${{ secrets.ASIA_PMA_FTP_PASS}} 
         exclude: |
           **/.git*
