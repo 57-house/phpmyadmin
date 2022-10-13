@@ -56,7 +56,7 @@ jobs:
     - name: FTP-Deploy-Action-In-Europe
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.EUROPA_PMA_FTP_SERVER }}
+        server: ${{ secrets.EUROPA_PMA_FTP_SERVER }} 
         username: ${{ secrets.EUROPA_PMA_FTP_USER }}
         password: ${{ secrets.EUROPA_PMA_FTP_PASS }} 
         exclude: |
