@@ -45,7 +45,7 @@ jobs:
         server: ${{ secrets.AMERICA_PMA_FTP_SERVER }} 
         username: ${{ secrets.AMERICA_PMA_FTP_USER }}
         password: ${{ secrets.AMERICA_PMA_FTP_PASS }}
-        exclude: |
+        exclude: | 
           **/.git*
           **/.git*/**
           **/node_modules/**
