@@ -133,7 +133,7 @@ final class Versions
   'theseer/tokenizer' => '1.2.1@34a41e998c2183e22995f158c581e7b5e755ab9e',
   'vimeo/psalm' => '4.23.0@f1fe6ff483bf325c803df9f510d09a03fd796f88',
   'webmozart/path-util' => '2.3.0@d939f7edc24c9a1bb9c0dee5cb05d8e859490725',
-  'phpmyadmin/phpmyadmin' => 'dev-main@926430d8b97f731f38b5a2c72ac5005e576681ee',
+  'phpmyadmin/phpmyadmin' => 'dev-main@3ed8b2239284811f4dbc35bfd0904c2c7cf92253',
 );
 
     private function __construct()

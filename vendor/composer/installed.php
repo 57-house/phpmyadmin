@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '926430d8b97f731f38b5a2c72ac5005e576681ee',
+        'reference' => '3ed8b2239284811f4dbc35bfd0904c2c7cf92253',
         'name' => 'phpmyadmin/phpmyadmin',
         'dev' => true,
     ),
@@ -334,7 +334,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '926430d8b97f731f38b5a2c72ac5005e576681ee',
+            'reference' => '3ed8b2239284811f4dbc35bfd0904c2c7cf92253',
             'dev_requirement' => false,
         ),
         'phpmyadmin/shapefile' => array(
