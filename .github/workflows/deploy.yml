@@ -1,0 +1,67 @@
+name: Publish Website to CPanel
+on:
+  push:
+    branches:
+      - main
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action-In-Asia
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.ASIA_PMA_FTP_SERVER }}
+        username: ${{ secrets.ASIA_PMA_FTP_USER }}
+        password: ${{ secrets.ASIA_PMA_FTP_PASSWORD }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/vendor/**
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action-In-Africa
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.AFRICA_PMA_FTP_SERVER }}
+        username: ${{ secrets.AFRICA_PMA_FTP_USER }}
+        password: ${{ secrets.AFRICA_PMA_FTP_PASS }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/vendor/**
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action-In-America
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.AMERICA_PMA_FTP_SERVER }} 
+        username: ${{ secrets.AMERICA_PMA_FTP_USER }}
+        password: ${{ secrets.AMERICA_PMA_FTP_PASS }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/vendor/**
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action-In-Europe
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.EUROPA_PMA_FTP_SERVER }}
+        username: ${{ secrets.EUROPA_PMA_FTP_USER }}
+        password: ${{ secrets.EUROPA_PMA_FTP_PASS }} 
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/vendor/**
+     
