@@ -16,7 +16,7 @@ jobs:
       with:
         server: ${{ secrets.ASIA_PMA_FTP_SERVER }}
         username: ${{ secrets.ASIA_PMA_FTP_USER }}
-        password: ${{ secrets.ASIA_PMA_FTP_PASS}}
+        password: ${{ secrets.ASIA_PMA_FTP_PASS}} 
         exclude: |
           **/.git*
           **/.git*/**
