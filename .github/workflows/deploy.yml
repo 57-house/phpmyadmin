@@ -20,8 +20,6 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
-          **/node_modules/**
-          **/vendor/**
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
@@ -34,8 +32,6 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
-          **/node_modules/**
-          **/vendor/**
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
@@ -48,8 +44,6 @@ jobs:
         exclude: | 
           **/.git*
           **/.git*/**
-          **/node_modules/** 
-          **/vendor/**
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
@@ -62,6 +56,4 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
-          **/node_modules/**
-          **/vendor/**
      
